@@ -1,0 +1,341 @@
+//colors
+$color_silver_chalice_approx: rgba(170, 170, 170, 1);
+$black: rgba(0, 0, 0, 1);
+$color_mountain_mist_approx: rgba(153, 153, 153, 1);
+$color_log_cabin_approx: rgba(34, 34, 34, 1);
+$color_sail_approx: rgba(179, 212, 252, 1);
+$color_celeste_approx: rgba(204, 204, 204, 1);
+$white: rgba(255, 255, 255, 1);
+$color_pomegranate_approx: rgba(228, 77, 38, 1);
+
+//fonts
+$font_0: 'Helvetica';
+$font_1: 'Helvetica Neue';
+$font_2: 'Arial';
+
+html {
+	color: $color_log_cabin_approx;
+	font-size: 1em;
+	line-height: 1.4;
+}
+::-moz-selection {
+	background: $color_sail_approx;
+	//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	text-shadow: none;
+}
+::selection {
+	background: $color_sail_approx;
+	//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	text-shadow: none;
+}
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid $color_celeste_approx;
+	margin: 1em 0;
+	padding: 0;
+}
+audio {
+	vertical-align: middle;
+}
+canvas {
+	vertical-align: middle;
+}
+iframe {
+	vertical-align: middle;
+}
+img {
+	vertical-align: middle;
+}
+svg {
+	vertical-align: middle;
+}
+video {
+	vertical-align: middle;
+}
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+textarea {
+	resize: vertical;
+}
+.browserupgrade {
+	margin: 0.2em 0;
+	background: $color_celeste_approx;
+	color: $black;
+	padding: 0.2em 0;
+}
+body {
+	font: 16px/26px $font_0, $font_1, $font_2;
+	background-color: $black;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 5%;
+}
+.header-container {
+	border-bottom: 5px solid $black;
+	background: $black;
+}
+.footer-container {
+	border-top: 5px solid $black;
+	background: $black;
+	footer {
+		color: $white;
+		padding: 20px 0;
+	}
+}
+.main {
+	padding: 200px 0;
+	text-align: center;
+	aside {
+		border-top: 5px solid $black;
+		background: $black;
+		color: $white;
+		padding: 0 5% 10px;
+	}
+	h1 {
+		font-size: 4em;
+		color: $white;
+		margin: auto;
+	}
+}
+.title {
+	color: $white;
+}
+nav {
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+	a {
+		display: block;
+		margin-bottom: 10px;
+		padding: 15px 0;
+		text-align: center;
+		text-decoration: none;
+		font-weight: bold;
+		color: $white;
+		background: $color_pomegranate_approx;
+		&:hover {
+			color: $white;
+			text-decoration: underline;
+		}
+		&:visited {
+			color: $white;
+		}
+	}
+}
+.letter {
+	fill: $white;
+}
+g {
+}
+#mighty {
+}
+#music {
+	display: none;
+}
+#it {
+	display: none;
+}
+@media only screen and(min-width: 480px) {
+	nav {
+		a {
+			float: left;
+			width: 27%;
+			margin: 0 1.7%;
+			padding: 25px 2%;
+			margin-bottom: 0;
+		}
+		li {
+			&:first-child a {
+				margin-left: 0;
+			}
+			&:last-child a {
+				margin-right: 0;
+			}
+		}
+		ul li {
+			display: inline;
+		}
+	}
+	.oldie nav a {
+		margin: 0 0.7%;
+	}
+}
+@media only screen and(min-width: 768px) {
+	.header-container {
+		//vendor-prefix found
+		//-webkit-box-shadow: 0 5px 10px #aaa
+		//vendor-prefix found
+		//-moz-box-shadow: 0 5px 10px #aaa
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 5px 10px $color_silver_chalice_approx;
+	}
+	.main {
+		aside {
+			//vendor-prefix found
+			//-webkit-box-shadow: 0 5px 10px #aaa
+			//vendor-prefix found
+			//-moz-box-shadow: 0 5px 10px #aaa
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 5px 10px $color_silver_chalice_approx;
+			float: right;
+			width: 28%;
+		}
+		article {
+			float: left;
+			width: 57%;
+		}
+	}
+	.title {
+		float: left;
+	}
+	nav {
+		float: right;
+		width: 38%;
+	}
+}
+@media only screen and(min-width: 1140px) {
+	.wrapper {
+		width: 1026px;
+		margin: 0 auto;
+	}
+}
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	&.focusable {
+		&:active {
+			clip: auto;
+			height: auto;
+			margin: 0;
+			overflow: visible;
+			position: static;
+			width: auto;
+		}
+		&:focus {
+			clip: auto;
+			height: auto;
+			margin: 0;
+			overflow: visible;
+			position: static;
+			width: auto;
+		}
+	}
+}
+.invisible {
+	visibility: hidden;
+}
+.clearfix {
+	*zoom: 1;
+	&:before {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+@media print {
+	* {
+		background: transparent !important;
+		color: $black !important;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: none !important;
+		//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		text-shadow: none !important;
+		&:before {
+			background: transparent !important;
+			color: $black !important;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: none !important;
+			//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			text-shadow: none !important;
+		}
+		&:after {
+			background: transparent !important;
+			color: $black !important;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: none !important;
+			//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			text-shadow: none !important;
+		}
+	}
+	a {
+		text-decoration: underline;
+		&:visited {
+			text-decoration: underline;
+		}
+	}
+	pre {
+		border: 1px solid $color_mountain_mist_approx;
+		page-break-inside: avoid;
+	}
+	blockquote {
+		border: 1px solid $color_mountain_mist_approx;
+		page-break-inside: avoid;
+	}
+	thead {
+		display: table-header-group;
+	}
+	tr {
+		page-break-inside: avoid;
+	}
+	img {
+		page-break-inside: avoid;
+		max-width: 100% !important;
+	}
+	p {
+		orphans: 3;
+		widows: 3;
+	}
+	h2 {
+		orphans: 3;
+		widows: 3;
+		page-break-after: avoid;
+	}
+	h3 {
+		orphans: 3;
+		widows: 3;
+		page-break-after: avoid;
+	}
+	a[href]:after {
+		content: "(" attr(href) ")";
+	}
+	abbr[title]:after {
+		content: "(" attr(title) ")";
+	}
+	a[href^="#"]:after {
+		content: "";
+	}
+	a[href^="javascript:"]:after {
+		content: "";
+	}
+}
+.ie7 .title {
+	padding-top: 20px;
+}
+.m:hover {
+	fill: $color_silver_chalice_approx;
+}
+.i:hover {
+	fill: $color_silver_chalice_approx;
+}

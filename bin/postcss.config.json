@@ -1,0 +1,9 @@
+{
+    "use": ["autoprefixer"],
+    "input": "css/main.noprefix.css",
+    "output": "css/main.css",
+    "local-plugins": true,
+    "autoprefixer": {
+        "browsers": "> 5%"
+    }
+}
