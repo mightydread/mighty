@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "./bin/build-css",
     "prefix-css": "./bin/prefix-css",
-    "watch-css": "./bin/watch-css"
+    "watch-css": "./bin/watch-css",
+    "install-deps": "./bin/install-deps"
   },
   "author": "mighty",
   "devDependencies": {

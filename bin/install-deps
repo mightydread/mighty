@@ -1,0 +1,1 @@
+cp ./node_modules/velocity-animate/velocity.min.js ./js/vendor/ && cp ./node-modules/vivus/dist/vivus.min.js js/vendor/

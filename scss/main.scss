@@ -131,16 +131,31 @@ nav {
 	}
 }
 .letter {
-	fill: $white;
+
+}
+.m:hover {
+	fill: $color_silver_chalice_approx;
+}
+.i:hover {
+	fill: $color_silver_chalice_approx;
 }
 g {
 }
+.anim {
+	fill: $white;
+	fill-opacity: 0;
+	color: $white;
+	stroke: $white;
+}
 #mighty {
+
 }
 #music {
+
 	display: none;
 }
 #it {
+
 	display: none;
 }
 @media only screen and(min-width: 480px) {
@@ -254,88 +269,6 @@ g {
 		clear: both;
 	}
 }
-@media print {
-	* {
-		background: transparent !important;
-		color: $black !important;
-		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-		box-shadow: none !important;
-		//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-		text-shadow: none !important;
-		&:before {
-			background: transparent !important;
-			color: $black !important;
-			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-			box-shadow: none !important;
-			//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-			text-shadow: none !important;
-		}
-		&:after {
-			background: transparent !important;
-			color: $black !important;
-			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-			box-shadow: none !important;
-			//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-			text-shadow: none !important;
-		}
-	}
-	a {
-		text-decoration: underline;
-		&:visited {
-			text-decoration: underline;
-		}
-	}
-	pre {
-		border: 1px solid $color_mountain_mist_approx;
-		page-break-inside: avoid;
-	}
-	blockquote {
-		border: 1px solid $color_mountain_mist_approx;
-		page-break-inside: avoid;
-	}
-	thead {
-		display: table-header-group;
-	}
-	tr {
-		page-break-inside: avoid;
-	}
-	img {
-		page-break-inside: avoid;
-		max-width: 100% !important;
-	}
-	p {
-		orphans: 3;
-		widows: 3;
-	}
-	h2 {
-		orphans: 3;
-		widows: 3;
-		page-break-after: avoid;
-	}
-	h3 {
-		orphans: 3;
-		widows: 3;
-		page-break-after: avoid;
-	}
-	a[href]:after {
-		content: "(" attr(href) ")";
-	}
-	abbr[title]:after {
-		content: "(" attr(title) ")";
-	}
-	a[href^="#"]:after {
-		content: "";
-	}
-	a[href^="javascript:"]:after {
-		content: "";
-	}
-}
 .ie7 .title {
 	padding-top: 20px;
-}
-.m:hover {
-	fill: $color_silver_chalice_approx;
-}
-.i:hover {
-	fill: $color_silver_chalice_approx;
 }
