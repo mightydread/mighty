@@ -91,44 +91,6 @@ body {
 .main {
 	padding: 200px 0;
 	text-align: center;
-	aside {
-		border-top: 5px solid $black;
-		background: $black;
-		color: $white;
-		padding: 0 5% 10px;
-	}
-	h1 {
-		font-size: 4em;
-		color: $white;
-		margin: auto;
-	}
-}
-.title {
-	color: $white;
-}
-nav {
-	ul {
-		margin: 0;
-		padding: 0;
-		list-style-type: none;
-	}
-	a {
-		display: block;
-		margin-bottom: 10px;
-		padding: 15px 0;
-		text-align: center;
-		text-decoration: none;
-		font-weight: bold;
-		color: $white;
-		background: $color_pomegranate_approx;
-		&:hover {
-			color: $white;
-			text-decoration: underline;
-		}
-		&:visited {
-			color: $white;
-		}
-	}
 }
 .letter {
 
@@ -172,62 +134,15 @@ g {
 	margin-top: 10px;
 }
 @media only screen and(min-width: 480px) {
-	nav {
-		a {
-			float: left;
-			width: 27%;
-			margin: 0 1.7%;
-			padding: 25px 2%;
-			margin-bottom: 0;
-		}
-		li {
-			&:first-child a {
-				margin-left: 0;
-			}
-			&:last-child a {
-				margin-right: 0;
-			}
-		}
-		ul li {
-			display: inline;
-		}
-	}
-	.oldie nav a {
-		margin: 0 0.7%;
-	}
 }
 @media only screen and(min-width: 768px) {
 	.header-container {
-		//vendor-prefix found
-		//-webkit-box-shadow: 0 5px 10px #aaa
-		//vendor-prefix found
-		//-moz-box-shadow: 0 5px 10px #aaa
-		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-		box-shadow: 0 5px 10px $color_silver_chalice_approx;
+
 	}
 	.main {
-		aside {
-			//vendor-prefix found
-			//-webkit-box-shadow: 0 5px 10px #aaa
-			//vendor-prefix found
-			//-moz-box-shadow: 0 5px 10px #aaa
-			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-			box-shadow: 0 5px 10px $color_silver_chalice_approx;
-			float: right;
-			width: 28%;
-		}
-		article {
-			float: left;
-			width: 57%;
-		}
+
 	}
-	.title {
-		float: left;
-	}
-	nav {
-		float: right;
-		width: 38%;
-	}
+
 }
 @media only screen and(min-width: 1140px) {
 	.wrapper {
@@ -235,41 +150,7 @@ g {
 		margin: 0 auto;
 	}
 }
-.hidden {
-	display: none !important;
-	visibility: hidden;
-}
-.visuallyhidden {
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
-	&.focusable {
-		&:active {
-			clip: auto;
-			height: auto;
-			margin: 0;
-			overflow: visible;
-			position: static;
-			width: auto;
-		}
-		&:focus {
-			clip: auto;
-			height: auto;
-			margin: 0;
-			overflow: visible;
-			position: static;
-			width: auto;
-		}
-	}
-}
-.invisible {
-	visibility: hidden;
-}
+
 .clearfix {
 	*zoom: 1;
 	&:before {
@@ -281,7 +162,4 @@ g {
 		display: table;
 		clear: both;
 	}
-}
-.ie7 .title {
-	padding-top: 20px;
 }

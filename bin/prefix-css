@@ -1,1 +1,1 @@
-postcss -c bin/postcss.config.json
+postcss -c bin/postcss.config.json && rm css/main.noprefix.css

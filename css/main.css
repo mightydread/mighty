@@ -69,38 +69,6 @@ body {
 .main {
   padding: 200px 0;
   text-align: center; }
-  .main aside {
-    border-top: 5px solid black;
-    background: black;
-    color: white;
-    padding: 0 5% 10px; }
-  .main h1 {
-    font-size: 4em;
-    color: white;
-    margin: auto; }
-
-.title {
-  color: white; }
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none; }
-
-nav a {
-  display: block;
-  margin-bottom: 10px;
-  padding: 15px 0;
-  text-align: center;
-  text-decoration: none;
-  font-weight: bold;
-  color: white;
-  background: #e44d26; }
-  nav a:hover {
-    color: white;
-    text-decoration: underline; }
-  nav a:visited {
-    color: white; }
 
 .i:hover {
   fill: white;
@@ -128,73 +96,10 @@ nav a {
 .dropdown-open {
   margin-top: 10px; }
 
-@media only screen and (min-width: 480px) {
-  nav a {
-    float: left;
-    width: 27%;
-    margin: 0 1.7%;
-    padding: 25px 2%;
-    margin-bottom: 0; }
-  nav li:first-child a {
-    margin-left: 0; }
-  nav li:last-child a {
-    margin-right: 0; }
-  nav ul li {
-    display: inline; }
-  .oldie nav a {
-    margin: 0 0.7%; } }
-
-@media only screen and (min-width: 768px) {
-  .header-container {
-    box-shadow: 0 5px 10px #aaaaaa; }
-  .main aside {
-    box-shadow: 0 5px 10px #aaaaaa;
-    float: right;
-    width: 28%; }
-  .main article {
-    float: left;
-    width: 57%; }
-  .title {
-    float: left; }
-  nav {
-    float: right;
-    width: 38%; } }
-
 @media only screen and (min-width: 1140px) {
   .wrapper {
     width: 1026px;
     margin: 0 auto; } }
-
-.hidden {
-  display: none !important;
-  visibility: hidden; }
-
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px; }
-  .visuallyhidden.focusable:active {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto; }
-  .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto; }
-
-.invisible {
-  visibility: hidden; }
 
 .clearfix {
   *zoom: 1; }
@@ -205,6 +110,3 @@ nav a {
     content: " ";
     display: table;
     clear: both; }
-
-.ie7 .title {
-  padding-top: 20px; }
