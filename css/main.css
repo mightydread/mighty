@@ -89,6 +89,16 @@ body {
 #it {
   display: none; }
 
+.music-icon {
+  height: 50px;
+  margin: 0 5px; }
+  .music-icon img {
+    width: auto;
+    height: 50px; }
+  .music-icon:hover img {
+    -webkit-filter: invert(50%);
+            filter: invert(50%); }
+
 .dropdown-closed {
   margin-top: 10px;
   display: none; }

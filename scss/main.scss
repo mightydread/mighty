@@ -126,6 +126,20 @@ g {
 
 	display: none;
 }
+.music-icon {
+	height: 50px;
+	// width: 50px;
+	margin: 0 5px;
+	img {
+		width: auto;
+		height: 50px;
+	}
+	&:hover {
+		img {
+			filter: invert(50%);
+		}
+	}
+}
 .dropdown-closed {
 	margin-top: 10px;
 	display: none;
