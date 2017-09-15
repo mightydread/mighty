@@ -133,19 +133,25 @@ nav {
 .letter {
 
 }
-.m:hover {
-	fill: $color_silver_chalice_approx;
-}
+
 .i:hover {
-	fill: $color_silver_chalice_approx;
+	fill: $white;
+	fill-opacity: 1;
+}
+.m, .m2 {
+	&:hover {
+		fill: $white;
+		fill-opacity: 1;
+	}
 }
 g {
 }
 .anim {
-	fill: $white;
-	fill-opacity: 0;
+	// fill: $white;
+	// fill-opacity: 0;
 	color: $white;
 	stroke: $white;
+	stroke-width: 0.03em;
 }
 #mighty {
 
@@ -157,6 +163,13 @@ g {
 #it {
 
 	display: none;
+}
+.dropdown-closed {
+	margin-top: 10px;
+	display: none;
+}
+.dropdown-open {
+	margin-top: 10px;
 }
 @media only screen and(min-width: 480px) {
 	nav {

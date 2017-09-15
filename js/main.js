@@ -1,48 +1,130 @@
-var svg_anim = new Array('');
-
-var vivus_init = function(objects) {
-  for (var i = 0; i < objects.length; i++) {
-    svg_anim[i] = new Vivus(objects[i], {
-      duration: 100,
-      start: 'manual',
-      reverseStack: true
-    }, function(obj) {
-      obj.el.classList.add('finished');
-      obj.el.style.fillOpacity = 1;
-      obj.el.style.strokeOpacity = 0;
-    });
-  }
-};
-function draw_all() {
-    console.log(svg_anim);
-    for(var i=0;i<svg_anim.length;i++) {
-      svg_anim[i].play();
-    }
-  }
+var anim_mighty = new Vivus('mighty', {
+  duration: 70,
+  start: 'manual'
+}, function(obj) {
+  obj.el.classList.add('finished');
+  // obj.el.style.fillOpacity = 1;
+  // obj.el.style.strokeOpacity = 0;
+});
+var anim_music = new Vivus('music', {
+  duration: 50,
+  start: 'manual'
+}, function(obj) {
+  obj.el.classList.add('finished');
+  // obj.el.style.fillOpacity = 1;
+  // obj.el.style.strokeOpacity = 0;
+});
+var anim_it = new Vivus('it', {
+  duration: 20,
+  start: 'manual'
+}, function(obj) {
+  obj.el.classList.add('finished');
+  // obj.el.style.fillOpacity = 1;
+  // obj.el.style.strokeOpacity = 0;
+});
 $(document).ready(function() {
-    vivus_init($(".anim"));
-    svg_anim[0].play();
-  $(".m").click(function() {
-    window.open("http://soundcloud.com/mightydread", '_blank');
+  // vivus_init($(".anim"));
+  anim_mighty.play(function() {
+    // anim_mighty.play(-1);
+
   });
+  //   $(".m").mouseenter(function() {
+  //     anim_mighty.play(-1, function() {
+  //       $("#mighty").hide();
+  //       $("#music").show();
+  //       anim_music.play(function() {
+  //         $(".dropdown-closed").velocity("slideDown", function() {
+  //           $(".dropdown-closed").addClass("dropdown-open");
+  //           $(".dropdown-closed").removeClass("dropdown-closed");
+  //         });
+  //         $(".m").click(function() {
+  //           anim_music.play(-1, function() {
+  //             $(".dropdown-open").velocity("slideUp", function() {
+  //               $(".dropdown-open").addClass("dropdown-closed");
+  //               $(".dropdown-open").removeClass("dropdown-open");
+  //             });
+  //             $("#music").hide();
+  //             $("#mighty").show();
+  //             anim_mighty.play();
+  //           });
+  //         });
+  //       });
+  //     });
+  //   });
+  //   $(".i").mouseenter(function() {
+  //     anim_mighty.play(-1, function() {
+  //       $("#mighty").hide();
+  //       $("#it").show();
+  //       anim_it.play(function() {
+  //         dropdown_open();
+  //         $(".i").click(function() {
+  //           anim_it.play(-1, function() {
+  //             dropdown_close();
+  //             $("#it").hide();
+  //             $("#mighty").show();
+  //             anim_mighty.play();
+  //           });
+  //         });
+  //       });
+  //     });
+  //   });
+  // });
+
   $(".m").mouseenter(function() {
-    svg_anim[0].play(-1);
-    $("#mighty").hide();
-    $("#music").show();
-    svg_anim[1].play();
+    anim_mighty.play(-1, function() {
+
+      $("#mighty").hide();
+      $("#music").show();
+      anim_music.play(function() {
+        $(".dropdown-closed").velocity("slideDown", function() {
+          $(".dropdown-closed").addClass("dropdown-open");
+          $(".dropdown-closed").removeClass("dropdown-closed");
+        });
+        $(".m2").click(function() {
+          anim_music.play(-1, function() {
+            $(".dropdown-open").velocity("slideUp", function() {
+              $(".dropdown-open").addClass("dropdown-closed");
+              $(".dropdown-open").removeClass("dropdown-open");
+            });
+            $("#music").hide();
+            $("#mighty").show();
+            anim_mighty.play();
+          });
+        });
+      });
+    });
   });
   $(".m").mouseleave(function() {
-    $("#music").hide();
-    $("#mighty").show();
+    anim_mighty.play();
   });
-  $(".i").mouseenter(function() {
-    $("#mighty").hide();
-    $("#it").show();
-    svg_anim[2].play();
 
+  $(".i").mouseenter(function() {
+    anim_mighty.play(-1, function() {
+
+      $("#mighty").hide();
+      $("#it").show();
+      anim_it.play(function() {
+        $(".dropdown-closed").velocity("slideDown", function() {
+          $(".dropdown-closed").addClass("dropdown-open");
+          $(".dropdown-closed").removeClass("dropdown-closed");
+        });
+        $(".i2").click(function() {
+          anim_it.play(-1, function() {
+            $(".dropdown-open").velocity("slideUp", function() {
+              $(".dropdown-open").addClass("dropdown-closed");
+              $(".dropdown-open").removeClass("dropdown-open");
+            });
+            $("#it").hide();
+            $("#mighty").show();
+            anim_mighty.play();
+          });
+        });
+      });
+    });
   });
   $(".i").mouseleave(function() {
-    $("#it").hide();
-    $("#mighty").show();
+
+    anim_mighty.play();
+
   });
 });

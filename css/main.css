@@ -102,23 +102,31 @@ nav a {
   nav a:visited {
     color: white; }
 
-.m:hover {
-  fill: #aaaaaa; }
-
 .i:hover {
-  fill: #aaaaaa; }
+  fill: white;
+  fill-opacity: 1; }
+
+.m:hover, .m2:hover {
+  fill: white;
+  fill-opacity: 1; }
 
 .anim {
-  fill: white;
-  fill-opacity: 0;
   color: white;
-  stroke: white; }
+  stroke: white;
+  stroke-width: 0.03em; }
 
 #music {
   display: none; }
 
 #it {
   display: none; }
+
+.dropdown-closed {
+  margin-top: 10px;
+  display: none; }
+
+.dropdown-open {
+  margin-top: 10px; }
 
 @media only screen and (min-width: 480px) {
   nav a {
