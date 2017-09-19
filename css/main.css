@@ -70,13 +70,13 @@ body {
   padding: 200px 0;
   text-align: center; }
 
-.i:hover {
+.i:hover, .i2:hover {
   fill: white;
-  fill-opacity: 1; }
+  fill-opacity: 1 !important; }
 
 .m:hover, .m2:hover {
   fill: white;
-  fill-opacity: 1; }
+  fill-opacity: 1 !important; }
 
 .anim {
   color: white;
@@ -99,11 +99,21 @@ body {
     -webkit-filter: invert(50%);
             filter: invert(50%); }
 
-.dropdown-closed {
+.dropdown {
   margin-top: 10px;
+  color: white; }
+  .dropdown ul {
+    list-style-type: none; }
+  .dropdown li {
+    display: inline; }
+
+.music {
+  text-align: left; }
+
+.closed {
   display: none; }
 
-.dropdown-open {
+.open {
   margin-top: 10px; }
 
 @media only screen and (min-width: 1140px) {
