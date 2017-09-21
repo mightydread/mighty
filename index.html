@@ -12,7 +12,6 @@
   <title>mighty</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/main.css">
@@ -58,9 +57,13 @@
             <a class="music-icon" href="https://www.facebook.com/aka.dj.mighty"><img src="img/fb.png" /></a>
           </li>
         </ul>
+        <div id="events">
+            Gigs:<br />
+        </div>
+<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fmightydread%2F" frameborder="0" ></iframe>
       </div>
       <div class="dropdown closed it">
-        Contact: mighty@fango.org
+        Contact: {{email}}
       </div>
     </div>
     <!-- #main -->
@@ -74,11 +77,14 @@
   </div>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+
+
   <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')
   </script>
   <script src="js/vendor/vivus.min.js"></script>
   <script src="js/vendor/velocity.min.js"></script>
+
   <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
