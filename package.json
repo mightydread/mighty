@@ -11,8 +11,8 @@
   "author": "mighty",
   "devDependencies": {
     "autoprefixer": "^6.5.1",
-    "node-sass": "^3.10.1",
-    "nodemon": "^1.11.0",
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.18.3",
     "postcss-cli": "^2.6.0"
   },
   "dependencies": {
